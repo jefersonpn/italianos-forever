@@ -1,0 +1,274 @@
+/* Global Resets and Box-Sizing */
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Root Variables for Global Colors and Shadows */
+:root {
+    --lt-color-gray-100: #f8f9fc;
+    --lt-color-gray-200: #f1f3f9;
+    --lt-color-gray-300: #dee3ed;
+    --lt-color-gray-400: #c2c9d6;
+    --lt-color-gray-500: #8f96a3;
+    --lt-color-gray-600: #5e636e;
+    --lt-color-gray-700: #2f3237;
+    --lt-color-gray-800: #1d1e20;
+    --lt-color-gray-900: #111213;
+    --lt-shadowDefault: 0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04);
+    --lt-shadowActive: 0 0 8px -2px rgba(0, 0, 0, 0.1), 0 6px 20px -3px rgba(0, 0, 0, 0.2);
+    --lt-color-white: #fff !important;
+    --lt-color-black: #111213 !important;
+    --lt-color-transparent: rgba(255, 255, 255, 0) !important;
+    --lt-color-background-light: var(--lt-color-gray-100) !important;
+    --lt-color-background-default: var(--lt-color-gray-200) !important;
+    --lt-color-background-dark: var(--lt-color-gray-300) !important;
+    --lt-color-border-light: var(--lt-color-gray-200) !important;
+    --lt-color-border-default: var(--lt-color-gray-300) !important;
+    --lt-color-border-dark: var(--lt-color-gray-400) !important;
+    --lt-color-text-very-light: var(--lt-color-gray-500) !important;
+    --lt-color-text-light: var(--lt-color-gray-600) !important;
+    --lt-color-text-default: var(--lt-color-gray-700) !important;
+    --lt-color-text-dark: var(--lt-color-gray-800) !important;
+    --lt-color-overlay-default: #fff !important;
+    --lt-color-overlay-dark: #fff !important;
+    --lt-color-overlay-transparent: rgba(0, 0, 0, 0.1) !important;
+    --lt-shadow-website-overlay: 0 0 7px 0 rgba(0, 0, 0, 0.3) !important;
+
+    /* Global Typography */
+    --e-global-typography-primary-font-family: "Noto Sans";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Noto Sans";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Noto Sans";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Noto Sans";
+    --e-global-typography-accent-font-weight: 500;
+    --e-global-color-primary: #000000;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #3F7853;
+    --e-global-color-d32e871: #A6351B;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--lt-color-text-default);
+    background-color: var(--lt-color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header Styling */
+header {
+    background-color: var(--lt-color-white);
+    border-bottom: 1px solid var(--lt-color-border-default);
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 20px 80px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px;
+    display: block;
+}
+
+.elementor-nav-menu--main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.elementor-nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.elementor-item {
+    text-decoration: none;
+    color: var(--e-global-color-secondary);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    transition: color 0.3s, transform 0.3s;
+    padding: 13px 20px;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu-item:not(:last-child) .elementor-item::after {
+    content: '|';
+    display: inline-block;
+    color: var(--e-global-color-secondary);
+    margin-left: 20px;
+}
+
+.elementor-item:hover {
+    color: var(--e-global-color-primary);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: calc(100vh - 80px);
+    padding: 0 ;
+    flex-wrap: wrap;
+}
+
+section.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1 1 45%;
+    padding: 20px;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: var(--e-global-color-primary);
+}
+
+.text h1 span {
+    font-weight: 700;
+    color: var(--e-global-color-accent);
+}
+
+.text p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: var(--e-global-color-text);
+}
+
+.button {
+    display: inline-block;
+    background-color: #008000;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #006600;
+    transform: translateY(-2px);
+}
+
+.image {
+    flex: 1 1 55%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    margin-left: auto;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-bottom-right-radius: 50px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .elementor-nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .elementor-item {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    section.content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .text {
+        padding: 20px;
+        text-align: center;
+        flex: 1 1 100%;
+    }
+
+    .button {
+        padding: 12px 20px;
+    }
+
+    .image {
+        flex: 1 1 100%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text h1 {
+        font-size: 2rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 10px 15px;
+    }
+
+    .header-container {
+        padding: 10px;
+    }
+}

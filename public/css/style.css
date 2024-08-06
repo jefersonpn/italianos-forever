@@ -1,56 +1,55 @@
-/* Global Resets and Box-Sizing */
-*,
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
+/* Global Styles */
 /* Root Variables for Global Colors and Shadows */
 :root {
-    --lt-color-gray-100: #f8f9fc;
-    --lt-color-gray-200: #f1f3f9;
-    --lt-color-gray-300: #dee3ed;
-    --lt-color-gray-400: #c2c9d6;
-    --lt-color-gray-500: #8f96a3;
-    --lt-color-gray-600: #5e636e;
-    --lt-color-gray-700: #2f3237;
-    --lt-color-gray-800: #1d1e20;
-    --lt-color-gray-900: #111213;
-    --lt-shadowDefault: 0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04);
-    --lt-shadowActive: 0 0 8px -2px rgba(0, 0, 0, 0.1), 0 6px 20px -3px rgba(0, 0, 0, 0.2);
-    --lt-color-white: #fff !important;
-    --lt-color-black: #111213 !important;
-    --lt-color-transparent: rgba(255, 255, 255, 0) !important;
-    --lt-color-background-light: var(--lt-color-gray-100) !important;
-    --lt-color-background-default: var(--lt-color-gray-200) !important;
-    --lt-color-background-dark: var(--lt-color-gray-300) !important;
-    --lt-color-border-light: var(--lt-color-gray-200) !important;
-    --lt-color-border-default: var(--lt-color-gray-300) !important;
-    --lt-color-border-dark: var(--lt-color-gray-400) !important;
-    --lt-color-text-very-light: var(--lt-color-gray-500) !important;
-    --lt-color-text-light: var(--lt-color-gray-600) !important;
-    --lt-color-text-default: var(--lt-color-gray-700) !important;
-    --lt-color-text-dark: var(--lt-color-gray-800) !important;
-    --lt-color-overlay-default: #fff !important;
-    --lt-color-overlay-dark: #fff !important;
-    --lt-color-overlay-transparent: rgba(0, 0, 0, 0.1) !important;
-    --lt-shadow-website-overlay: 0 0 7px 0 rgba(0, 0, 0, 0.3) !important;
+    --color-gray-100: #f8f9fc; /* Light gray */
+    --color-gray-200: #f1f3f9; /* Light gray */
+    --color-gray-300: #dee3ed; /* Medium gray */
+    --color-gray-400: #c2c9d6; /* Medium gray */
+    --color-gray-500: #8f96a3; /* Medium dark gray */
+    --color-gray-600: #5e636e; /* Dark gray */
+    --color-gray-700: #2f3237; /* Dark gray */
+    --color-gray-800: #1d1e20; /* Very dark gray */
+    --color-gray-900: #111213; /* Almost black */
 
-    /* Global Typography */
-    --e-global-typography-primary-font-family: "Noto Sans";
-    --e-global-typography-primary-font-weight: 600;
-    --e-global-typography-secondary-font-family: "Noto Sans";
-    --e-global-typography-secondary-font-weight: 400;
-    --e-global-typography-text-font-family: "Noto Sans";
-    --e-global-typography-text-font-weight: 400;
-    --e-global-typography-accent-font-family: "Noto Sans";
-    --e-global-typography-accent-font-weight: 500;
-    --e-global-color-primary: #000000;
-    --e-global-color-secondary: #54595F;
-    --e-global-color-text: #7A7A7A;
-    --e-global-color-accent: #3F7853;
-    --e-global-color-d32e871: #A6351B;
+    --color-white: #fff !important; /* White */
+    --color-black: #111213 !important; /* Black */
+    --color-transparent: rgba(255, 255, 255, 0) !important; /* Transparent */
+
+    --color-background-light: var(--color-gray-100) !important; /* Light background */
+    --color-background-default: var(--color-gray-200) !important; /* Default background */
+    --color-background-dark: var(--color-gray-300) !important; /* Dark background */
+
+    --color-border-light: var(--color-gray-200) !important; /* Light border */
+    --color-border-default: var(--color-gray-300) !important; /* Default border */
+    --color-border-dark: var(--color-gray-400) !important; /* Dark border */
+
+    --color-text-very-light: var(--color-gray-500) !important; /* Very light text */
+    --color-text-light: var(--color-gray-600) !important; /* Light text */
+    --color-text-default: var(--color-gray-700) !important; /* Default text */
+    --color-text-dark: var(--color-gray-800) !important; /* Dark text */
+
+    --color-overlay-default: #fff !important; /* Default overlay color */
+    --color-overlay-dark: #fff !important; /* Dark overlay color */
+    --color-overlay-transparent: rgba(0, 0, 0, 0.1) !important; /* Transparent overlay color */
+
+    --shadow-default: 0 2px 6px -1px rgba(0, 0, 0, 0.16), 0 1px 4px -1px rgba(0, 0, 0, 0.04); /* Default shadow */
+    --shadow-active: 0 0 8px -2px rgba(0, 0, 0, 0.1), 0 6px 20px -3px rgba(0, 0, 0, 0.2); /* Active shadow */
+    --shadow-website-overlay: 0 0 7px 0 rgba(0, 0, 0, 0.3) !important; /* Website overlay shadow */
+
+    --font-primary-family: "Noto Sans"; /* Primary font family */
+    --font-primary-weight: 600; /* Primary font weight */
+    --font-secondary-family: "Noto Sans"; /* Secondary font family */
+    --font-secondary-weight: 400; /* Secondary font weight */
+    --font-text-family: "Noto Sans"; /* Text font family */
+    --font-text-weight: 400; /* Text font weight */
+    --font-accent-family: "Noto Sans"; /* Accent font family */
+    --font-accent-weight: 500; /* Accent font weight */
+
+    --color-primary: #000000; /* Primary color */
+    --color-secondary: #54595F; /* Secondary color */
+    --color-text: #7A7A7A; /* Text color */
+    --color-accent: #3F7853; /* Accent color */
+    --color-highlight: #A6351B; /* Highlight color */
 }
 
 html {
@@ -59,216 +58,422 @@ html {
 }
 
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--lt-color-text-default);
-    background-color: var(--lt-color-white);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; /* Sets default font family */
+    font-size: 1rem; /* Sets default font size */
+    font-weight: 400; /* Sets default font weight */
+    line-height: 1.5; /* Sets default line height */
+    color: var(--color-text-default); /* Sets default text color */
+    background-color: var(--color-white); /* Sets default background color */
+    -webkit-font-smoothing: antialiased; /* Improves font rendering */
+    -moz-osx-font-smoothing: grayscale; /* Improves font rendering on Mac */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-/* Header Styling */
 header {
-    background-color: var(--lt-color-white);
-    border-bottom: 1px solid var(--lt-color-border-default);
-    position: relative;
+    background-color: var(---color-white); /* Sets header background color */
+    border-bottom: 1px solid var(--color-border-default); /* Adds bottom border to header */
+    position: relative; /* Positions header relative to its normal position */
+    width: 100%; /* Ensures full width of the header */
 }
 
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    padding: 20px 80px;
-    margin: 0 auto;
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin-top: 0;
+    margin-bottom: .9rem;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.header__container {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes space evenly between items */
+    align-items: center; /* Aligns items vertically */
+    max-width: 1200px; /* Limits maximum width */
+    padding: 20px 80px; /* Adds padding around container */
+    margin: 0 auto; /* Centers container */
 }
 
 .logo img {
-    width: 150px;
-    display: block;
+    max-width: 150px; /* Sets maximum image width */
+    width: 100%; /* Ensures the image takes full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Ensures image is treated as a block element */
 }
 
-.elementor-nav-menu--main {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
+.nav-menu {
+    display: flex; /* Enables flexbox layout for navigation menu */
+    align-items: center; /* Aligns items vertically */
+    justify-content: flex-end; /* Aligns items to the end of the container */
+    gap: 20px; /* Adds space between items */
 }
 
-.elementor-nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
+.nav-menu__list {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically */
 }
 
-.menu-item {
-    display: flex;
-    align-items: center;
-    position: relative;
+.nav-menu__item {
+    position: relative; /* Positions item relative to its normal position */
 }
 
-.elementor-item {
-    text-decoration: none;
-    color: var(--e-global-color-secondary);
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    transition: color 0.3s, transform 0.3s;
-    padding: 13px 20px;
-    display: inline-block;
-    position: relative;
-    text-transform: uppercase;
+.nav-menu__link {
+    text-decoration: none; /* Removes underline from links */
+    color: var(--color-secondary); /* Sets link color */
+    font-family: "Noto Sans", sans-serif; /* Sets font family */
+    font-weight: 500; /* Sets font weight */
+    font-size: 12px; /* Sets font size */
+    transition: color 0.3s, transform 0.3s; /* Adds transition for color and transform changes */
+    padding: 13px 20px; /* Adds padding around links */
+    display: inline-block; /* Ensures link is treated as a block element */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    letter-spacing: 1.2px; /* Adjusts space between letters */
 }
 
-.menu-item:not(:last-child) .elementor-item::after {
-    content: '|';
-    display: inline-block;
-    color: var(--e-global-color-secondary);
-    margin-left: 20px;
+.nav-menu__item:not(:last-child) .nav-menu__link::after {
+    content: '|'; /* Adds vertical bar after links */
+    display: inline-block; /* Ensures bar is treated as a block element */
+    color: var(--color-secondary); /* Sets bar color */
+    margin-left: 20px; /* Adds margin to the left of the bar */
 }
 
-.elementor-item:hover {
-    color: var(--e-global-color-primary);
+.nav-menu__link:hover {
+    color: var(--color-primary); /* Changes link color on hover */
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: calc(100vh - 80px);
-    padding: 0 ;
-    flex-wrap: wrap;
+/* Content Section Styling */
+.content__section {
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Distributes space evenly between items */
+    display: flex; /* Enables flexbox layout */
+    padding: 0 0px 40px 0px; /* Adds padding around content */
+    width: 100%; /* Full width */
+    height: 580px; /* Automatically adjusts height based on content */
+    background-image: url('/images/coliseum.png'); /* Background image */
+    background-color: var(--color-overlay-default); /* Background color */
+    background-size: contain; /* Covers entire section */
+    background-position: top right; /* Positions background */
+    background-repeat: no-repeat; /* Prevents background repetition */
+    border-bottom-right-radius: 50px; /* Rounds the bottom-right corner */
+    overflow: hidden; /* Hides any overflow content */
+    margin-bottom: 0; /* Adds space between sections */
+    position: relative; /* Sets relative position for z-index */
+    z-index: 1; /* Base z-index for stacking */
+    overflow: visible; /* Allows for overlap from other sections */
 }
 
-section.content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-    flex-wrap: wrap;
+.content__overlay {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Distributes space evenly between items */
+    width: 100%; /* Full width */
+    padding: 0; /* Removes padding */
+    position: relative; /* Ensures stacking context */
+    z-index: 1; /* Ensures text is above the image */
 }
 
-.text {
-    flex: 1 1 45%;
-    padding: 20px;
+.decorative-image {
+    position: absolute; /* Positions the image absolutely */
+    top: 0; /* Adjusts top position over the text */
+    left: 25%; /* Centers the image horizontally */
+    transform: translateX(-50%); /* Centers it properly */
+    max-width: 215px; /* Sets maximum width of the image */
+    width: 100%; /* Ensures the image takes full width of its container */
+    height: auto; /* Maintains aspect ratio */
+    z-index: 1; /* Ensures it is behind the text */
+    opacity: 100%; /* Makes the image visible */
+    pointer-events: none; /* Prevents interaction with the image */
 }
 
-.text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    color: var(--e-global-color-primary);
+.content__text {
+    flex: 1; /* Allows flex item to grow and shrink */
+    padding: 20px 0px 10px 230px; /* Adds padding around text */
+    color: var(--color-text-dark); /* Sets text color */
+    position: relative; /* Ensures stacking context */
+    z-index: 1; /* Ensures text appears above other overlays */
 }
 
-.text h1 span {
-    font-weight: 700;
-    color: var(--e-global-color-accent);
+.content__text h1 {
+    font-size: 3.3rem; /* Sets font size for heading */
+    margin-bottom: 20px; /* Adds margin below heading */
+    color: var(--color-primary); /* Sets default heading color */
+    line-height: 1; /* Sets line height */
+    font-weight: 100; /* Normal weight for the text "Reconheça a sua" */
+    letter-spacing: 2px; /* Adjusts space between letters */
 }
 
-.text p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-    color: var(--e-global-color-text);
+.content__text h1 .highlighted-text {
+    font-weight: 700; /* Bold weight for emphasis */
+    color: var(--color-primary); /* Green color for the bold text */
+    letter-spacing: 2px; /* Slightly less letter spacing for bold text */
 }
 
+.divider {
+    width: 150px; /* Sets the width of the divider */
+    height: 4px; /* Sets the height of the divider */
+    background-color: var(--color-accent); /* Sets divider color */
+    margin: 20px 0; /* Adds margin to create space around the divider */
+}
+
+.content__text p {
+    font-size: 1.35rem; /* Sets font size for paragraph */
+    margin-bottom: 22px; /* Margin below paragraph */
+    color: var(--color-text-dark); /* Sets paragraph color */
+    letter-spacing: 1px; /* Adjusts space between letters */
+}
+
+.content__placeholder {
+    flex: 1; /* Allows flex item to grow and shrink */
+    /* This empty div can be styled or kept as-is for spacing */
+}
+
+/* Button Styles */
 .button {
-    display: inline-block;
-    background-color: #008000;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block; /* Ensures button is treated as a block element */
+    background-color: var(--color-accent); /* Sets button background color to match screenshot */
+    color: #fff; /* Sets button text color */
+    padding: 8px 40px; /* Adds padding around button */
+    text-decoration: none; /* Removes underline from button text */
+    font-weight: 600; /* Sets button text weight */
+    border-radius: 50px; /* Adds rounded corners to button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow to button */
+    transition: background-color 0.3s, transform 0.3s; /* Adds transition for color and transform changes */
+    text-align: center; /* Centers text */
+    text-transform: uppercase; /* Transforms text to uppercase */
+    letter-spacing: 1px; /* Adjusts space between letters */
 }
 
 .button:hover {
-    background-color: #006600;
-    transform: translateY(-2px);
+    background-color: #306241; /* Changes button background color on hover */
+    transform: translateY(-2px); /* Adds translate effect on hover */
 }
 
-.image {
-    flex: 1 1 55%;
-    display: flex;
-    justify-content: flex-end;
-    overflow: hidden;
-    margin-left: auto;
+/* About Section Styles */
+.about-section {
+    background-color: var(--color-background-light); /* Sets background color */
+    width: 100%; /* Full width */
+    padding: 0; /* Adds more padding for visual weight */
+    position: relative; /* Positioning for stacking */
+    overflow: hidden; /* Ensures no overflow */
+    margin-top: -100px; /* Pulls the section up */
+    margin-bottom: 50px; /* Adds space between sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
 }
 
-.image img {
-    width: 100%;
-    height: auto;
-    border-bottom-right-radius: 50px;
-    object-fit: cover;
-    display: block;
+.about-container {
+    max-width: 1200px; /* Sets max width for content */
+    padding-bottom: 85px;
+    margin: 0 auto; /* Centers content */
+    display: flex; /* Enables flexbox layout */
+    justify-content: flex-end; /* Aligns child to the right */
+    align-items: center; /* Centers items vertically */
+    position: relative;
+    background-color: var(--color-overlay-defaul);
+    z-index: 1; /* Ensures highest stacking in the about section */
+}
+
+.about-content {
+    position: relative; /* Ensures stacking context */
+    z-index: 2; /* Highest z-index to ensure it is above all other content */
+    background-image: url('/images/passaporto.png'); /* Background image */
+    background-size: 65% auto; /* Adjusts the size of the background */
+    background-repeat: no-repeat; /* Prevents background repetition */
+    background-position: bottom left; /* Adjusts position of the background */
+    top: 40px;
+    padding: 60px; /* Adds padding */
+    border-radius: 50px; /* Rounds the corners */
+    background-color: var(--color-overlay-default); /* Background color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a more prominent box shadow */
+}
+
+/* Ensure the text is positioned properly over the background */
+.about-text {
+    position: relative; /* Ensures stacking context for internal elements */
+    color: var(--color-text-dark); /* Text color */
+    width: 45%; /* Restricts width of text area */
+    padding: 0px 0px 73px 575px; /* Adds padding */
+    background-color: transparent; /* Allows background image to show */
+}
+
+.about-text h2 {
+    margin-bottom: 20px; /* Adds margin below heading */
+    color: var(--color-text-dark); /* Sets heading color */
+    font-family: "Noto Sans", Sans-serif; /* Sets font family */
+    font-size: 21px; /* Sets font size */
+    font-weight: 900; /* Sets font weight */
+    letter-spacing: .9px; /* Adjusts letter spacing */
+}
+
+.about-text ul {
+    list-style-type: disc; /* Removes default list style */
+    padding: 20px; /* Removes padding */
+    }
+
+.about-text ul li {
+    line-height: 35px; /* Sets line height */
+    color: var(--color-text-dark); /* Sets text color */
+    font-family: "Noto Sans", Sans-serif; /* Sets font family */
+    font-size: 17px; /* Sets font size */
+    font-weight: 400; /* Sets font weight */
+    letter-spacing: .5px; /* Adjusts letter spacing */
+}
+
+.about-text .divider {
+    width: 40px; /* Sets the width of the divider */
+    height: 4px; /* Sets the height of the divider */
+    background-color: var(--color-accent); /* Sets divider color */
+    margin: 20px 0; /* Adds margin to create space around the divider */
+}
+
+.about-text img {
+    position: absolute; /* Positioning for stacking */
+    top: 0; /* Sets the top position to 0 */
+    right: 0; /* Sets the left position to 0 */
+}
+
+/* Benefits Section Styles */
+.benefits-section {
+    background-color: var(--color-overlay-default); /* Sets background color */
+    width: 100%; /* Full width */
+    padding: 5% 10%; /* Adds padding */
+    position: relative; /* Positioning for stacking */
+    overflow: hidden; /* Ensures no overflow */
+    margin-bottom: 50px; /* Adds space between sections */
+}
+
+.benefits-container {
+    max-width: 1200px; /* Sets max width for content */
+    margin: 0 auto; /* Centers content */
+    display: flex; /* Enables flexbox layout */
+    justify-content: center; /* Centers child horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.benefits-content {
+    flex: 1; /* Allows flex item to grow and shrink */
+    padding: 20px; /* Adds padding */
+    color: var(--color-text-light); /* Sets text color */
+    position: relative; /* Ensures stacking context */
+    z-index: 2; /* Ensures text appears above other overlays */
+}
+
+.benefits-title {
+    font-size: 2rem; /* Sets font size */
+    color: var(--color-primary); /* Sets color */
+    margin-bottom: 10px; /* Adds bottom margin */
+    text-align: center; /* Centers the title */
 }
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px 20px;
+    .header__container {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: flex-start; /* Aligns items to start of container */
+        padding: 10px 20px; /* Adjusts padding */
     }
 
     .logo img {
-        width: 120px;
+        max-width: 120px; /* Sets maximum image width */
+        width: 100%; /* Ensures the image takes full width of its container */
     }
 
-    .elementor-nav-menu {
-        flex-direction: column;
-        gap: 10px;
+    .nav-menu__list {
+        flex-direction: column; /* Stacks navigation items vertically */
+        gap: 10px; /* Adjusts gap between items */
     }
 
-    .elementor-item {
-        font-size: 12px;
-        padding: 10px;
+    .content__section,
+    .about-section,
+    .benefits-section {
+        padding: 20px; /* Adjusts padding */
     }
 
-    section.content {
-        flex-direction: column;
-        padding: 0;
+    .decorative-image {
+        max-width: 80px; /* Sets maximum image width for smaller screens */
+        width: 100%; /* Ensures the image takes full width of its container */
+        height: auto; /* Maintains aspect ratio */
+        top: -10px; /* Adjusts position */
+        left: 50%; /* Centers the image horizontally */
+        transform: translateX(-50%); /* Centers it properly */
+        opacity: 100%; /* Makes the image visible */
     }
 
-    .text {
-        padding: 20px;
-        text-align: center;
-        flex: 1 1 100%;
+    .about-decorative-image {
+        top: -10px; /* Adjusts position */
+        left: 50%; /* Centers the image horizontally */
+        transform: translateX(-50%); /* Centers it properly */
+        opacity: 100%; /* Makes the image visible */
+    }
+
+    .content__text {
+        padding: 0; /* Removes padding */
+        text-align: center; /* Centers text */
+        flex: 1 1 100%; /* Adjusts flex properties */
     }
 
     .button {
-        padding: 12px 20px;
+        padding: 12px 20px; /* Adjusts padding */
     }
 
-    .image {
-        flex: 1 1 100%;
-        margin-top: 20px;
+    .about-text .divider {
+        width: 40px; /* Sets the width of the divider */
+        height: 4px; /* Sets the height of the divider */
+        background-color: var(--color-accent); /* Sets divider color */
+        margin: 20px 0; /* Adds margin to create space around the divider */
+    }
+
+    .about-text {
+        padding-left: 0; /* Removes extra padding */
     }
 }
 
 @media (max-width: 480px) {
-    .text h1 {
-        font-size: 2rem;
+    .content__section {
+        height: auto; /* Allows height to adjust automatically */
     }
 
-    .text p {
-        font-size: 1rem;
+    .content__text h1 {
+        font-size: 2rem; /* Adjusts font size */
+        letter-spacing: 0.8px; /* Adjusts letter spacing for smaller screens */
+    }
+
+    .content__text p {
+        font-size: 1rem; /* Adjusts font size */
+        letter-spacing: 0.3px; /* Tightens letter spacing for readability */
     }
 
     .button {
-        padding: 10px 15px;
+        padding: 10px 15px; /* Adjusts padding */
     }
 
-    .header-container {
-        padding: 10px;
+    .header__container {
+        padding: 0px; /* Adjusts padding */
+    }
+
+    .about-section,
+    .benefits-section {
+        padding: 20px; /* Adjusts padding */
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem; /* Sets font size */
+    }
+
+    .about-text ul li {
+        font-size: 0.9rem; /* Sets font size */
+    }
+
+    .benefits-title {
+        font-size: 1.5rem; /* Sets font size */
     }
 }

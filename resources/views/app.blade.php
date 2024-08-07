@@ -80,6 +80,102 @@
                 </div>
             </div>
         </section>
+
+        <!-- "Cards" Section -->
+        <section class="cards-section">
+            <div class="cards-container">
+                <div class="cards-content">
+                    <div class="cards-icon">
+                        <img src="{{ asset('images/globo.png') }}" alt="Icon">
+                    </div>
+                    <div class="cards-heading-container">
+                        <h2 class="cards-title">
+                            Circule com facilidade
+                        </h2>
+                        <p>em vários países do mundo</p>
+                    </div>
+                </div>
+                <div class="cards-content">
+                    <div class="cards-icon">
+                        <img src="{{ asset('images/capello.png') }}" alt="Icon">
+                    </div>
+                    <div class="cards-heading-container">
+                        <h2 class="cards-title">
+                            Acesse as melhores universidades
+                        </h2>
+                        <p>com menor investimento</p>
+                    </div>
+                </div>
+                <div class="cards-content">
+                    <div class="cards-icon">
+                        <img src="{{ asset('images/mani.png') }}" alt="Icon">
+                    </div>
+                    <div class="cards-heading-container">
+                        <h2 class="cards-title">
+                            Tenha mais credibilidade
+                        </h2>
+                        <p>para desenvolver negócios com vários países</p>
+                    </div>
+                </div>
+                <div class="cards-content">
+                    <div class="cards-icon">
+                        <img src="{{ asset('images/persone.png') }}" alt="Icon">
+                    </div>
+                    <div class="cards-heading-container">
+                        <h2 class="cards-title">
+                            Abra sua empresa
+                        </h2>
+                        <p>de forma rápida e sem complicações</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Services" Section -->
+        <section class="services-section"></section>
+            <div class="services-container">
+                <div class="services-content">
+                    <div class="services-heading-container">
+                        <span class="long-green-line"></span>
+                        <h2 class="services-title">
+                            CONSULTORIA PARA O RECONHECIMENTO DA CIDADANIA ITALIANA
+                        </h2>
+                        <span class="short-red-line"></span>
+                    </div>
+                </div>
+                <div class="services-list">
+                    <ul>
+                        <li>Atendimento personalizado</li>
+                        <li>Comunicação continuada do status de cada etapa</li>
+                        <li>Consultoria profissional</li>
+                        <li>Consultoria na solicitação para o cônjuge</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- "statua" Section -->
+        <section class="statua-section"></section>
+            <div class="statua-container">
+                <div class="statua-content">
+                    <img src="{{ asset('images/statua.png') }}" alt="statua">
+                </div>
+            </div>
+        </section>
+
+        <!-- "Services" Section -->
+        <section class="parla-section"></section>
+            <div class="parla-container">
+                <div class="parla-content">
+                    <span class="long-green-line"></span>
+                    <img src="{{ asset('images/parla.png') }}" alt="parla" class="parla-img">
+                    <h2 class="parla-title">
+                        O QUE DIZEM NOSSOS CLIENTES
+                    </h2>
+                    <span class="short-red-line"></span>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>

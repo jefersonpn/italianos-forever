@@ -165,7 +165,6 @@ p {
     background-position: top right; /* Positions background */
     background-repeat: no-repeat; /* Prevents background repetition */
     border-bottom-right-radius: 50px; /* Rounds the bottom-right corner */
-    overflow: hidden; /* Hides any overflow content */
     margin-bottom: 0; /* Adds space between sections */
     position: relative; /* Sets relative position for z-index */
     z-index: 1; /* Base z-index for stacking */
@@ -353,7 +352,7 @@ p {
     padding: 0%; /* Adds padding */
     position: relative; /* Positioning for stacking */
     overflow: hidden; /* Ensures no overflow */
-    margin-bottom: 50px; /* Adds space between sections */
+    margin-bottom: 0px; /* Adds space between sections */
 }
 
 .benefits-container {
@@ -403,7 +402,198 @@ p {
     background-color: transparent; /* Ensure no background color overlaps */
 }
 
+/* Card Section Styles */
+.cards-section {
+    width: 100%; /* Full width for the section */
+    padding: 0 0 20px 0; /* Add padding for spacing */
+    background-color: var(--color-white); /* Set background color */
+    display: flex;
+    justify-content: center; /* Center the card container */
+}
+
+.cards-container {
+    max-width: 1200px; /* Limit the max width of the container */
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Adjust spacing between items */
+    flex-wrap: nowrap; /* Prevent wrapping to keep items in a single line */
+    width: 100%; /* Full width */
+    padding: 0 20px; /* Horizontal padding for the container */
+    gap: 40px; /* Add spacing between cards */
+}
+
+.cards-content {
+    display: flex; /* Flexbox for icon and text alignment */
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center-align children */
+    text-align: center; /* Center-align text */
+    flex: 1; /* Allow flexible width */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.cards-icon img {
+    width: 60px; /* Set icon size */
+    height: 50px; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space below icon */
+}
+
+.cards-heading-container {
+    margin-top: 10px; /* Space above the heading */
+}
+
+.cards-title {
+    font-size: 1.2rem; /* Set title font size */
+    font-weight: 700; /* Bold text */
+    color: var(--color-gray-800); /* Set text color */
+    margin-bottom: 8px; /* Space below the title */
+    text-transform: capitalize; /* Capitalize each word */
+    margin-top: 0;
+}
+
+.cards-content p {
+    font-size: 1rem; /* Set paragraph font size */
+    color: var(--color-gray-600); /* Set paragraph text color */
+    line-height: 1.5; /* Set line height for readability */
+}
+
+/* Lines Section Styles */
+.long-green-line {
+    display: inline-block; /* Ensure it acts as an inline-block element */
+    width: 60%; /* Set a specific width for demonstration, adjust as needed */
+    height: 2px; /* Set the height of the line */
+    background-color: var(--color-accent); /* Set line color */
+    margin: 0 8% 0 0; /* Adjust margin to bring it closer to text */
+    z-index: 0; /* Ensure it is behind the img */
+}
+
+.short-red-line {
+    display: inline-block; /* Ensure it acts as an inline-block element */
+    width: 10%; /* Set width for demonstration, adjust as needed */
+    height: 2px; /* Set the height of the line */
+    background-color: red; /* Set line color */
+    margin: 0 5px; /* Adjust margin to bring it closer to text */
+}
+
+/* Services Section Styles */
+.services-content {
+    margin-top: 50px; /* Add margin above title */
+    background-color: var(--color-white); /* Set background color */
+
+}
+
+.services-list {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    gap: 20px; /* Add spacing between items */
+    margin-top: -20px; /* Add margin above items */
+    padding-left: 54%; /* Add padding to left to center the list */
+    line-height: 2.5rem; /* Adjust the line height as needed */
+    font-size: 17px; /* Adjust the font size as needed */
+
+}
+
+.statua-content img {
+    width: 30%;
+    height: auto;
+    margin-top: -16%;
+    margin-left: 15%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.services-heading-container {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 10px; /* Reduce gap between elements */
+    flex-direction: row; /* Ensure elements are in a row */
+    text-align: left; /* Center-align text */
+    margin-bottom: 30px; /* Margin below the container */
+}
+
+.services-title {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Keep the text bold */
+    color: var(--color-primary); /* Use the primary color */
+    margin: 0; /* Remove default margins */
+    padding: 0 10px; /* Add slight padding if needed */
+    text-align: left; /* Align the text to the left */
+}
+
+.service-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+
+/* Parla Section Styles */
+.parla-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.parla-content .long-green-line {
+    display: inline-block; /* Ensure it acts as an inline-block element */
+    width: 55%;
+    height: 2px;
+    background-color: var(--color-accent);
+    margin: 0 -2% 0 0;
+    z-index: 0;
+}
+
+.parla-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+    z-index: 2;
+    overflow: visible;
+}
+
+.parla-img {
+    width: 20%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
+    border-radius: 10px;
+    z-index: 1;
+    transform: translate(46%, 10%); /* Adjust to truly center the image */
+
+}
+
+
 /* Responsive Media Queries */
+
+@media (max-width: 1024px) {
+    .cards-container {
+        flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        justify-content: center; /* Center items when wrapped */
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+
+    .cards-content {
+        flex: 1 1 calc(50% - 20px); /* Adjust flex for tablets */
+        max-width: calc(50% - 20px); /* Ensure max width for tablets */
+    }
+
+    .cards-icon img {
+        width: 50px; /* Adjust icon size for tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 @media (max-width: 768px) {
     .header__container {
         flex-direction: column; /* Stacks items vertically */
@@ -464,6 +654,24 @@ p {
     .about-text {
         padding-left: 0; /* Removes extra padding */
     }
+
+    .cards-content {
+        flex: 1 1 100%; /* Adjust flex for mobile */
+        max-width: 100%; /* Ensure full width for mobile */
+    }
+
+    .cards-icon img {
+        width: 40px; /* Adjust icon size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .cards-title {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .cards-content p {
+        font-size: 0.9rem; /* Adjust paragraph font size for mobile */
+    }
 }
 
 @media (max-width: 480px) {
@@ -504,5 +712,23 @@ p {
 
     .benefits-title {
         font-size: 1.5rem; /* Sets font size */
+    }
+
+    .cards-content {
+        flex: 1 1 100%; /* Adjust flex for mobile */
+        max-width: 100%; /* Ensure full width */
+    }
+
+    .cards-icon img {
+        width: 50px; /* Adjust icon size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .cards-title {
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+
+    .cards-content p {
+        font-size: 0.8rem; /* Adjust paragraph font size */
     }
 }

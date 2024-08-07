@@ -536,7 +536,7 @@ p {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 50px;
+    margin-top: -3%;
     margin-bottom: 50px;
 }
 
@@ -562,14 +562,14 @@ p {
 }
 
 .parla-img {
-    width: 20%;
+    width: 35%;
     height: auto;
     margin-bottom: 5%;
     margin-top: 0%;
     margin-left: 0%;
     border-radius: 10px;
     z-index: 1;
-    transform: translate(46%, 10%); /* Adjust to truly center the image */
+    transform: translate(31%, 4%); /* Adjust to truly center the image */
 
 }
 

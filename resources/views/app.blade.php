@@ -62,7 +62,7 @@
                             <li>Atendemos a mais de 30.000 brasileiros</li>
                             <li>Somos membro do Conselho do Cidadão do Consulado Brasileiro em Milão.</li>
                         </ul>
-                        <img src="{{ asset('images/listra.png') }}" alt="Sello" class="decorative-image">
+                        <img src="{{ asset('images/listra.png') }}" alt="Sello">
                     </div>
                 </div>
             </div>
@@ -71,15 +71,11 @@
         <!-- Vantagens Section -->
         <section class="benefits-section" id="cidadania">
             <div class="benefits-container" id="benefits-container">
-                <div class="benefits-column" id="benefits">
-                    <div class="benefits-content" id="benefits-content">
-                        <div class="benefits-heading" id="benefits-heading">
-                            <div class="heading-container" id="heading-container">
-                                <h2 class="benefits-title" id="benefits-title">
-                                    VANTAGENS DE RECONHECER A SUA CIDADANIA ITALIANA
-                                </h2>
-                            </div>
-                        </div>
+                <div class="benefits-content" id="benefits-content">
+                    <div class="benefits-heading-container" id="benefits-heading-container">
+                        <h2 class="benefits-title" id="benefits-title">
+                            VANTAGENS DE RECONHECER A SUA CIDADANIA ITALIANA
+                        </h2>
                     </div>
                 </div>
             </div>

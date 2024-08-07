@@ -266,7 +266,7 @@ p {
     position: relative; /* Positioning for stacking */
     overflow: hidden; /* Ensures no overflow */
     margin-top: -100px; /* Pulls the section up */
-    margin-bottom: 50px; /* Adds space between sections */
+    margin-bottom: 10px; /* Adds space between sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
 }
 
@@ -286,7 +286,7 @@ p {
     position: relative; /* Ensures stacking context */
     z-index: 2; /* Highest z-index to ensure it is above all other content */
     background-image: url('/images/passaporto.png'); /* Background image */
-    background-size: 65% auto; /* Adjusts the size of the background */
+    background-size: 75% auto; /* Adjusts the size of the background */
     background-repeat: no-repeat; /* Prevents background repetition */
     background-position: bottom left; /* Adjusts position of the background */
     top: 40px;
@@ -337,15 +337,20 @@ p {
 
 .about-text img {
     position: absolute; /* Positioning for stacking */
-    top: 0; /* Sets the top position to 0 */
-    right: 0; /* Sets the left position to 0 */
+    top: 25px; /* Sets the top position */
+    right: -200px; /* Sets the right position */
+    width: 210px; /* Sets the width of the image */
+    height: auto; /* Maintains aspect ratio */
+    z-index: 0; /* Ensures it is behind the text */
+    opacity: 0.8; /* Adjusts the opacity */
+    pointer-events: none; /* Prevents interaction with the image */
 }
 
 /* Benefits Section Styles */
 .benefits-section {
     background-color: var(--color-overlay-default); /* Sets background color */
     width: 100%; /* Full width */
-    padding: 5% 10%; /* Adds padding */
+    padding: 0%; /* Adds padding */
     position: relative; /* Positioning for stacking */
     overflow: hidden; /* Ensures no overflow */
     margin-bottom: 50px; /* Adds space between sections */
@@ -357,21 +362,45 @@ p {
     display: flex; /* Enables flexbox layout */
     justify-content: center; /* Centers child horizontally */
     align-items: center; /* Centers items vertically */
+    background-image: url('/images/acesso.png'); /* Sets background image */
+    background-repeat: no-repeat; /* Prevents background repetition */
+    background-position: 0 -60px; /* Adjusts position of the background */
+    background-size: 60% auto; /* Adjusts the size of the background */
+    position: relative; /* Positioning for stacking */
+    z-index: 1; /* Ensures it is below the benefits section */
+    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
+    padding: 80px 0 60px;
 }
 
-.benefits-content {
-    flex: 1; /* Allows flex item to grow and shrink */
-    padding: 20px; /* Adds padding */
-    color: var(--color-text-light); /* Sets text color */
-    position: relative; /* Ensures stacking context */
-    z-index: 2; /* Ensures text appears above other overlays */
+.benefits-heading-container {
+    position: relative; /* Ensure this container is the positioning context for both image and text */
+    text-align: center; /* Center-align text and image within the container */
+}
+
+.benefits-heading-container img {
+    position: absolute;
+    top: 50%; /* Center the image vertically in the container */
+    left: 10%; /* Center the image horizontally in the container */
+    transform: translate(-90%, -62%); /* Adjust to truly center the image */
+    width: 80%; /* Adjust width to better fit within the container */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 0; /* Ensure image is behind text */
+    opacity: 100%; /* Reduce opacity for better text readability */
 }
 
 .benefits-title {
-    font-size: 2rem; /* Sets font size */
-    color: var(--color-primary); /* Sets color */
+    margin: 0px;
+    padding: 20px;
+    line-height: 1;
+    position: relative; /* Ensure text is positioned correctly relative to its container */
+    z-index: 1; /* Ensure text appears above the image */
+    font-size: 21px; /* Sets font size */
+    color: var(--color-primary); /* Sets text color */
     margin-bottom: 10px; /* Adds bottom margin */
+    font-weight: 800; /* Sets font weight */
+    letter-spacing: .9px; /* Adjusts letter spacing */
     text-align: center; /* Centers the title */
+    background-color: transparent; /* Ensure no background color overlaps */
 }
 
 /* Responsive Media Queries */

@@ -52,6 +52,13 @@
     --color-highlight: #A6351B; /* Highlight color */
 }
 
+@font-face {
+    font-family: 'Agnes';
+    src: url( '/fonts/Agne-Regular.ttf' ) format( 'truetype' );
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -261,46 +268,65 @@ p {
 .about-section {
     background-color: var(--color-background-light); /* Sets background color */
     width: 100%; /* Full width */
-    padding: 0; /* Adds more padding for visual weight */
+    padding: 2% 17% 0% 0%; /* Adds more padding for visual weight */
     position: relative; /* Positioning for stacking */
     overflow: hidden; /* Ensures no overflow */
-    margin-top: -100px; /* Pulls the section up */
-    margin-bottom: 10px; /* Adds space between sections */
+    margin-top: -5%; /* Pulls the section up */
+    margin-bottom: 5%; /* Adds space between sections */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle box shadow */
 }
 
 .about-container {
-    max-width: 1200px; /* Sets max width for content */
-    padding-bottom: 85px;
-    margin: 0 auto; /* Centers content */
+    width: 100%; /* Sets max width for content */
+    padding: 0% 0% 2% 0%;
     display: flex; /* Enables flexbox layout */
     justify-content: flex-end; /* Aligns child to the right */
     align-items: center; /* Centers items vertically */
     position: relative;
-    background-color: var(--color-overlay-defaul);
+    background-color: var(--color-overlay-default);
     z-index: 1; /* Ensures highest stacking in the about section */
 }
 
 .about-content {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
     position: relative; /* Ensures stacking context */
-    z-index: 2; /* Highest z-index to ensure it is above all other content */
-    background-image: url('/images/passaporto.png'); /* Background image */
-    background-size: 75% auto; /* Adjusts the size of the background */
-    background-repeat: no-repeat; /* Prevents background repetition */
-    background-position: bottom left; /* Adjusts position of the background */
-    top: 40px;
-    padding: 60px; /* Adds padding */
+    z-index: 1; /* Highest z-index to ensure it is above all other content */
+    top: 4%;
+    padding: 6%; /* Adds padding */
     border-radius: 50px; /* Rounds the corners */
     background-color: var(--color-overlay-default); /* Background color */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adds a more prominent box shadow */
+}
+
+.passaporto {
+    position: absolute;
+    height: auto;
+    z-index: -1; /* Ensure it is behind the text */
+}
+
+@media (max-width: 1680px) {
+    .passaporto {
+        width: 86%;
+        transform: translate(-12%, -31%); /* Transform for screens <= 1680px */
+    }
+}
+
+@media (min-width: 1681px) {
+    .passaporto {
+        width: 76%;
+        transform: translate(-12%, -28%); /* Transform for screens > 1680px */
+    }
 }
 
 /* Ensure the text is positioned properly over the background */
 .about-text {
     position: relative; /* Ensures stacking context for internal elements */
     color: var(--color-text-dark); /* Text color */
-    width: 45%; /* Restricts width of text area */
-    padding: 0px 0px 73px 575px; /* Adds padding */
+    width: 86%; /* Restricts width of text area */
+    padding: 6% 30% 0% 0%; /* Adds padding */
+    transform: translate(59%, -10%);
     background-color: transparent; /* Allows background image to show */
 }
 
@@ -337,7 +363,7 @@ p {
 .about-text img {
     position: absolute; /* Positioning for stacking */
     top: 25px; /* Sets the top position */
-    right: -200px; /* Sets the right position */
+    right: 15%; /* Sets the right position */
     width: 210px; /* Sets the width of the image */
     height: auto; /* Maintains aspect ratio */
     z-index: 0; /* Ensures it is behind the text */
@@ -566,9 +592,110 @@ p {
     border-radius: 10px;
     z-index: 1;
     transform: translate(31%, 4%); /* Adjust to truly center the image */
-
 }
 
+/* Testimonial Section Styles */
+.testimonial-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 0%;
+}
+
+.testimonial-content {
+    padding: 5% 10% 10% 12%;
+}
+
+.testimonial-title h2 {
+    color: var(--color-black);
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.1px;
+}
+
+.testimonial-text p {
+    color: var(--color-text);
+    font-size: 16px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.left-testimonial-container , .right-testimonial-container {
+    width: 20%;
+    height: auto;
+    background-color: var(--color-background-light);
+    margin-bottom: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.meaddle-testimonial-container {
+    width: 23%;
+    height: auto;
+    background-color: var(--color-background-light);
+    margin-bottom: 5%;
+    margin-top: 0%;
+    margin-left: 0%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.apostrophe-sides {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+    margin-top: -12%;
+    margin-bottom: 0;
+    transform: translate(-6%, 130%); /* Adjust to truly center the image */
+}
+
+.apostrophe-sides img {
+    width: 15%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 0% 0% 0% 0%;
+    margin-bottom: 5%;
+}
+
+.contact-title h2 {
+    padding: 25% 0% 0% 8%;
+    color: #000;
+    font-family: 'Agnes', sans-serif;
+    font-size: 108px;
+    font-weight: 800;
+    letter-spacing: .9px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 0%;
+}
+
+.contact-form button {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
 
 /* Responsive Media Queries */
 

@@ -283,7 +283,7 @@ p {
     justify-content: flex-end; /* Aligns child to the right */
     align-items: center; /* Centers items vertically */
     position: relative;
-    background-color: var(--color-overlay-default);
+    background-color: var(--color-background-light);
     z-index: 1; /* Ensures highest stacking in the about section */
 }
 

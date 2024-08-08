@@ -137,13 +137,16 @@
                 <div class="services-content">
                     <div class="services-heading-container">
                         <span class="long-green-line"></span>
-                        <h2 class="services-title">
+                        <h2 class="services-title-placeholder">
                             CONSULTORIA PARA O RECONHECIMENTO DA CIDADANIA ITALIANA
                         </h2>
                         <span class="short-red-line"></span>
                     </div>
                 </div>
                 <div class="services-list">
+                    <h2 class="services-title">
+                        CONSULTORIA PARA O RECONHECIMENTO DA CIDADANIA ITALIANA
+                    </h2>
                     <ul>
                         <li>Atendimento personalizado</li>
                         <li>Comunicação continuada do status de cada etapa</li>

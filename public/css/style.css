@@ -471,25 +471,38 @@ p {
     width: 10%; /* Set width for demonstration, adjust as needed */
     height: 2px; /* Set the height of the line */
     background-color: red; /* Set line color */
-    margin: 0 5px; /* Adjust margin to bring it closer to text */
+    margin: 0; /* Adjust margin to bring it closer to text */
 }
 
 /* Services Section Styles */
 .services-content {
-    margin-top: 50px; /* Add margin above title */
+    margin-top: 3%; /* Add margin above title */
     background-color: var(--color-white); /* Set background color */
 
+}
+
+.services-title-placeholder {
+    color: var(--color-white);
 }
 
 .services-list {
     display: flex; /* Enable flexbox layout */
     flex-wrap: wrap; /* Allow items to wrap to next line if needed */
     gap: 20px; /* Add spacing between items */
-    margin-top: -20px; /* Add margin above items */
-    padding-left: 54%; /* Add padding to left to center the list */
+    margin-top: -7%; /* Add margin above items */
+    padding-right: 12%;
+    padding-left: 56%; /* Add padding to left to center the list */
     line-height: 2.5rem; /* Adjust the line height as needed */
     font-size: 17px; /* Adjust the font size as needed */
+}
 
+.services-title {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Keep the text bold */
+    color: var(--color-primary); /* Use the primary color */
+    margin: 0; /* Remove default margins */
+    padding: 0 10px; /* Add slight padding if needed */
+    text-align: left; /* Align the text to the left */
 }
 
 .statua-content img {
@@ -508,24 +521,7 @@ p {
     gap: 10px; /* Reduce gap between elements */
     flex-direction: row; /* Ensure elements are in a row */
     text-align: left; /* Center-align text */
-    margin-bottom: 30px; /* Margin below the container */
-}
-
-.services-title {
-    font-size: 24px; /* Adjust the font size as needed */
-    font-weight: bold; /* Keep the text bold */
-    color: var(--color-primary); /* Use the primary color */
-    margin: 0; /* Remove default margins */
-    padding: 0 10px; /* Add slight padding if needed */
-    text-align: left; /* Align the text to the left */
-}
-
-.service-list {
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
+    margin-bottom: 3%; /* Margin below the container */
 }
 
 

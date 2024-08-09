@@ -727,7 +727,7 @@ p {
     background-size: 55%; /* Adjust to fit the background appropriately */
     background-position: 15%; /* Center the background image */
     background-color: var(--color-overlay-default);
-    padding: 22% 0% 0% 0%;
+    padding: 19% 10% 0% 10%;
     position: relative; /* Allow for z-index to take effect */
     margin-top: -295px; /* Adjust for how much you want it to overflow */
     z-index: 1; /* Lower z-index to appear under the contact section */
@@ -760,7 +760,7 @@ p {
     width: 60%; /* Set a specific width for demonstration, adjust as needed */
     height: 2px; /* Set the height of the line */
     background-color: var(--color-black); /* Set line color */
-    margin: 0 8% 0 0; /* Adjust margin to bring it closer to text */
+    margin: 0 8% 10px 0; /* Adjust margin to bring it closer to text */
     z-index: 0; /* Ensure it is behind the img */
 }
 
@@ -768,7 +768,7 @@ p {
     align-self: center;
     font-family: "Noto Sans", Sans-serif;
     font-size: 14px;
-    padding: 10px 287px 0px 0px;
+    padding: 0px 287px 0px 0px;
 }
 
 .footer-container .col-3 {
@@ -779,6 +779,7 @@ p {
     list-style: none;
     font-family: "Noto Sans", Sans-serif;
     font-size: 14px;
+    line-height: 2;
 }
 
 .footer-content ul {
@@ -786,8 +787,90 @@ p {
     padding: 0;
 }
 
+.footer-content ul li a {
+    color: var(--color-black);
+    text-decoration: none;
+}
 
+.footer-content h6 {
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 16px;
+    line-height: 2;
+    color: var(--color-black);
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0%;
+}
 
+.footer-content .aibm-logo img {
+    width: 51%;
+    height: auto;
+    padding: 2% 0% 0% 4%;
+}
+
+.footer-content .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-content .social-icons i {
+    color: var(--color-black);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Partita IVA Section Styles */
+.partita-iva-content p {
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 14px;
+    line-height: 2;
+    color: var(--color-black);
+    margin-top: 4%;
+}
+
+/* Copy Right Section Styles */
+.copyright-section {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 80px; /* Matches the height of your p tag */
+    background-color: var(--color-black); /* Sets the black background */
+}
+
+.copyright-content p {
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 2;
+    color: var(--color-white);
+    margin-right: 10px; /* Removes any additional margins */
+    text-align: center;
+}
+
+.highlighted-text a{
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--color-white);
+}
+
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #29A81A;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.whatsapp-float i {
+    margin-top: 16px;
+}
 
 /* Responsive Media Queries */
 

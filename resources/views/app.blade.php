@@ -287,19 +287,79 @@
                                 </span>
                                 <span>Fixo: 051 581156 | Fax: 051 565550</span>
                             </li>
+                            <li>
+                                <a href="https://wa.me/393922984330" target="_blank">
+                                    <span>
+                                        <i class="fab fa-whatsapp"></i>
+                                    </span>
+                                    <span>WhatsApp:+39 392.2984330</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@aibm.it" target="_blank">
+                                    <span>
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                    <span>info@aibm.it</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@aibm.it" target="_blank">
+                                    <span>
+                                        <i class="far fa-envelope"></i>
+                                    </span>
+                                    <span>contato@italianosforever.com</span>
+                                </a>
+                            </li>
                         </ul>
+                        <h6>
+                            Uma Empresa do Grupo AIBM
+                        </h6>
+                        <div class="aibm-logo">
+                            <img src="{{ asset('images/aibm-logo.png') }}" alt="AIBM Logo">
+                        </div>
                     </div>
                 </div>
                 <div class="col-3 footer-content">
                     <h3>Redes Sociais</h3>
                     <span class="separator-line"></span>
-                    <p>Via Nazionale 192/C – 40051
-                        Altedo di Malalbergo (Bologna)
-                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/italianosforever" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/italianosforever/" target="_blank" >
+                            <i class="fab fa-instagram"></i>
+                        </a>
+            
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- "Partita IVA" Section -->
+        <section class="partita-iva-section">
+            <div class="partita-iva-container">
+                <div class="d-flex justify-content-center align-items-center partita-iva-content">
+                    <p>Ass. Italo Brasiliani nel Mondo - P.Iva (CNPJ) 02674511205</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- "Copyright" Section -->
+        <section class="copyright-section">
+            <div class="copyright-container">
+                <div class="col-12 copyright-content">
+                    <div class="col-12 d-flex align-items-center">
+                        <p class="mb-0 mr-2">Designed by </p>
+                        <a href="https://sinnapse.com" target="_blank"><img src="{{ asset('images/sinnapse-logo.png') }}" alt="sinnapse"></a>
+                        <p class="mb-0 ms-2"> and Recreated by <span class="highlighted-text"> <a href="https://www.linkedin.com/in/jefersonpn/" target="_blank">Jeferson Nascimento</a></span></p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-
+    <a href="https://wa.me/393922984330" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>

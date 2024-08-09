@@ -663,18 +663,22 @@ p {
 }
 
 /* Contact Section Styles */
-.contact-section {
-    padding: 0% 0% 0% 0%;
-    margin-bottom: 5%;
+
+.contact-title {
+    z-index: 2;
+    background-color: transparent; /* Ensure the background is transparent */
+
 }
 
 .contact-title h2 {
-    padding: 25% 0% 0% 8%;
+    padding: 15% 0% 0% 8%;
     color: #000;
     font-family: 'Agnes', sans-serif;
     font-size: 108px;
     font-weight: 800;
     letter-spacing: .9px;
+    z-index: 2;
+    background-color: transparent;
 }
 
 .contact-content {
@@ -684,6 +688,15 @@ p {
     justify-content: center;
     gap: 5%;
     margin-top: 0%;
+    z-index: 2;
+    background-color: transparent; /* Ensure the background is transparent */
+}
+
+.contact-form {
+    padding: 10% 0% 0% 0%;
+    z-index: 2;
+    background-color: transparent; /* Ensure the background is transparent */
+
 }
 
 .contact-form button {
@@ -695,7 +708,86 @@ p {
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
+    z-index: 1;
 }
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 0% 0% 0% 0%;
+    margin-bottom: 5%;
+    position: relative; /* Position relative to allow stacking */
+    z-index: 2; /* Ensure it's on top of the footer section */
+    background-color: transparent; /* Ensure the background is transparent */
+}
+
+/* Coliseum Background Styles */
+.footer-section {
+    background-image: url('/images/coliseum-bg.png');
+    background-repeat: no-repeat;
+    background-size: 55%; /* Adjust to fit the background appropriately */
+    background-position: 15%; /* Center the background image */
+    background-color: var(--color-overlay-default);
+    padding: 22% 0% 0% 0%;
+    position: relative; /* Allow for z-index to take effect */
+    margin-top: -295px; /* Adjust for how much you want it to overflow */
+    z-index: 1; /* Lower z-index to appear under the contact section */
+}
+
+/* Footer Section Styles */
+.footer-container {
+    padding: 0% 0% 0% 10%;
+    transform: translate(0%, 0%); /* Adjust to truly center the image */
+    position: relative;
+    z-index: 3; /* Ensure it's above the background image */
+}
+
+.footer-content h3 {
+    color: rgb(0, 0, 0); /* Text color */
+    font-family: "Noto Sans", Sans-serif; /* Sets font family */
+    font-size: 17px; /* Sets font size */
+    font-weight: 600; /* Sets font weight */
+    line-height: 1; /* Sets line height */
+    margin-bottom: 1rem; /* Adds margin to bottom */
+    margin-top: 0.5rem; /* Adds margin to top */
+    orphans: 3;
+    padding: 0;
+    text-transform: uppercase;
+    widows: 3;
+}
+
+.footer-content .separator-line {
+    display: inline-block; /* Ensure it acts as an inline-block element */
+    width: 60%; /* Set a specific width for demonstration, adjust as needed */
+    height: 2px; /* Set the height of the line */
+    background-color: var(--color-black); /* Set line color */
+    margin: 0 8% 0 0; /* Adjust margin to bring it closer to text */
+    z-index: 0; /* Ensure it is behind the img */
+}
+
+.footer-content p {
+    align-self: center;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 14px;
+    padding: 10px 287px 0px 0px;
+}
+
+.footer-container .col-3 {
+    flex: 1 0 auto;
+}
+
+.footer-content ul li {
+    list-style: none;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 14px;
+}
+
+.footer-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 /* Responsive Media Queries */
 

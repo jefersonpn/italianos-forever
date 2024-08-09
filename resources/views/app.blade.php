@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Italianos Forever</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- Link to Custom Styles -->
@@ -197,7 +198,7 @@
                         <p>
                             A empresa nos foi apresentada em 2011 e a partir daí fizemos a cidadania com toda orientação legal e acompanhamento do processo, sempre com profissionalismo e qualidade nos serviços prestados. Agradecemos a Ester e Giovanni, e sua equipe, pela atenção o carisma e carinho que nos tratam até hoje.
 
-    Regina Márcia Bertoncini Hennemann e Robson Avila Wolff
+                            Regina Márcia Bertoncini Hennemann e Robson Avila Wolff
                         </p>
                     </div>
                 </div>
@@ -213,9 +214,8 @@
                     <div class="testimonial-text">
                         <p>Fui assistido em 2009 por Ester e Giovanni durante o mais importante e complexo projeto da minha carreira : a expatriação. Com uma abordagem firme e diligente me garantiram um accesso espontâneo à minha cidadania. Nada melhor do que dispor de profissionais com tradição e maestria.
 
-Sales Engineering Manager – Cella Retail Solutions
-
-</p>
+                        Sales Engineering Manager – Cella Retail Solutions
+                        </p>
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@ Sales Engineering Manager – Cella Retail Solutions
                     <div class="testimonial-text">
                         <p>Profissionais sérios, experientes, dedicados e apaixonados no suporte ao reconhecimento da cidadania italiana. O processo ocorreu tranquilamente de acordo com a descrição dos serviços prestados. Super recomendo!
 
-Erika Mendes Correia – Clinical Trial Manager at Global Antibiotic R&D Partnership (GARDP) Genève</p>
+                        Erika Mendes Correia – Clinical Trial Manager at Global Antibiotic R&D Partnership (GARDP) Genève</p>
                     </div>
                 </div>
             </div>
@@ -243,7 +243,7 @@ Erika Mendes Correia – Clinical Trial Manager at Global Antibiotic R&D Partner
                     <div class="col-6 contact-title">
                         <h2>Contato</h2>
                     </div>
-                    <div class="col-6 contact-form mt-5">
+                    <div class="col-6 contact-form">
                         <form>
                             <div class="mb-3">
                                 <input type="text" class="form-control" id="name" placeholder="Seu nome">
@@ -266,7 +266,40 @@ Erika Mendes Correia – Clinical Trial Manager at Global Antibiotic R&D Partner
                 </div>
             </div>
         </section>
-
+        <!-- "Footer" Section -->
+        <section class="footer-section">
+            <div class=" row footer-container">
+                <div class="col-3 footer-content">
+                    <h3>Endereço</h3>
+                    <span class="separator-line"></span>
+                    <p>Via Nazionale 192/C – 40051
+                        Altedo di Malalbergo (Bologna)
+                    </p>
+                </div>
+                <div class="col-3 footer-content">
+                    <h3>Contato</h3>
+                    <span class="separator-line"></span>
+                    <div>
+                        <ul>
+                            <li>
+                                <span>
+                                    <i class="fas fa-mobile-alt"></i>
+                                </span>
+                                <span>Fixo: 051 581156 | Fax: 051 565550</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 footer-content">
+                    <h3>Redes Sociais</h3>
+                    <span class="separator-line"></span>
+                    <p>Via Nazionale 192/C – 40051
+                        Altedo di Malalbergo (Bologna)
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+
 </body>
 </html>
